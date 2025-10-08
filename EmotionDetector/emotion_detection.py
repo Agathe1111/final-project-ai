@@ -15,7 +15,7 @@ def emotion_detector(text_to_analyse):
 
     #error handling : if error 400, return None for all emotions. Else, return the emotion
     if status_code == 400 :
-        return formatted_response = {
+        formatted_response = {
             'anger' : None,
             'disgust' : None,
             'fear' : None,
@@ -23,6 +23,7 @@ def emotion_detector(text_to_analyse):
             'sadness' : None,
             'dominant_emotion' : None
             }
+        return formatted_response
     else :
         return formatted_response
         
